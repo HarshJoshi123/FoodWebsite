@@ -1,0 +1,103 @@
+
+       
+#div-card-image{
+	flex-basis:65%;
+	background-size: cover;
+	border-right:1px solid groove ;
+   text-align:center;
+}
+
+#div-quantity{
+	flex-grow:1;
+}
+
+ @media only screen and (max-width: 970px) {
+
+#article-card{
+	font-family: Amatic SC;
+	display:flex;
+	margin:15px 2px ;
+	box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+   flex-basis:98%;
+   flex-direction:column;
+   flex-wrap:wrap;
+  flex-grow:1;
+
+}
+#image-card{
+	       max-width:100%;
+	       height:auto;
+
+}
+#div-bill{
+display:flex;
+flex-direction:column;
+margin:auto;
+border:2px solid black ;
+padding:0;
+
+}
+
+}
+@media screen and (max-width: 1200px) and (min-width: 970px){
+#article-card{
+	font-family: Amatic SC;
+	display:flex;
+	margin:5px 4px ;
+	box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+   flex-basis:45%;
+   flex-direction:column;
+   flex-wrap:wrap;
+   flex-grow:1;
+}
+ #image-card{
+	       max-width:100%;
+	       height:auto;
+	       
+}
+#div-bill{
+display:flex;
+flex-direction:column;
+margin:auto;
+border:2px solid black ;
+padding:0;
+
+}
+
+
+}
+
+
+
+@media only screen and (min-width:1200px){
+
+
+#article-card{
+	font-family: Amatic SC;
+	display:flex;
+	margin:20px 4px 0px 4px  ;
+	box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+   flex-basis:31%;
+   flex-direction:column;
+   flex-wrap:wrap;
+
+
+}
+#main-container{
+	justify-content: space-around;
+}
+#image-card{
+	       max-width:100%;
+	       height:250px;
+	       
+}
+#div-bill{
+display:flex;
+flex-direction:column;
+padding:0;
+margin:0;
+
+}
+
+}
+

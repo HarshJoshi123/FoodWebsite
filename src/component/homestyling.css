@@ -1,0 +1,47 @@
+
+
+.parallax-main1{
+	position:relative;
+	width:100%;
+	height:90%;
+	background-color:black; 
+}
+
+.parallax-main2{
+	position:relative;
+	width:100%;
+  	height:100%;
+	background-color:#130b0b;
+	display:flex;
+   justify-content: center;
+   align-items:center;
+   color:white;
+   text-align: justify;
+   
+}
+
+
+ .parallax-submain1{
+position:absolute;
+height:100%;
+width:100%;
+background-image: url("../images/food-parallax.jpg");
+background-position:center;
+background-size: cover;
+opacity:0.6;
+background-attachment: fixed; /*for parallax */
+
+
+}
+
+
+.parallax-submain2{
+	position:absolute;
+	width:100%;
+	height:100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+  color:white;
+  font-size: 40px;
+}
