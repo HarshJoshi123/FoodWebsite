@@ -3,7 +3,7 @@ import {Link,withRouter } from "react-router-dom"
 
  const isactive=(history,path)=>{
    if(history.location.pathname===path){ 
-return {color:"#ff9900",fontSize:"140%"}
+return {color:"#ff9900",fontSize:"140%",fontFamily:"Alfa Slab One"}
 }
    else  return {color:"#ffffff",fontSize:"90%"}
 
