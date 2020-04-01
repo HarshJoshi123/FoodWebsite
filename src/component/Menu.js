@@ -2,6 +2,8 @@ import React,{Component} from "react"
 import data from "../foodmenu.js"
 import "./menustyling.css"
 import {Redirect} from "react-router-dom"
+import AOS from 'aos'; 
+import 'aos/dist/aos.css';
 class Menu extends Component{
 constructor(){
   super()
@@ -14,7 +16,7 @@ constructor(){
 }
 
 componentDidMount(){
-
+AOS.init({duration:1200});
  localStorage.removeItem('cartitems');
 
 
@@ -94,13 +96,13 @@ const {cart}=this.state
     data.map((v,i)=>{
        
      return(
-<article id="article-card" style={{padding:"0px 2px 4px 2px",marginBottom:"7px"}} >
+<article data-aos="fade-right" id="article-card" style={{padding:"0px 2px 4px 2px",marginBottom:"7px"}} >
         
           <div id="div-card-image">
           <img src={v.path} id="image-card" /> 
         </div>
        <section style={{display:"flex",flexDirection:"column",flexWrap:"wrap"}} className="Prices"> <h2 style={{flexGrow:"2",backgroundColor:"MediumSeaGreen",textAlign:"center",fontFamily:"Alex Brush"}}>{v.name} </h2> 
-       <div style={{flexGrow:"1",display:"flex",flexWrap:"wrap"}}> {v.Qty.map((qty,j)=>{return(<div style={{flexGrow:"1",paddingBottom:"10px"}}> &nbsp; {qty} ({v.prices[j]} &#8377;) :<input type="number" id="quantity"  onChange={this.handlechange.bind(this,qty,i)} name="quantity" placeholder="0" min="0" max="5" />  </div>)})}   </div>
+       <div style={{flexGrow:"1",display:"flex",flexWrap:"wrap"}}> {v.Qty.map((qty,j)=>{return(<div style={{flexGrow:"1",paddingBottom:"10px"}}> &nbsp; {qty} ({v.prices[j]} &#8377;) :<input type="number" id="quantity"  onChange={this.handlechange.bind(this,qty,i)} name="quantity" placeholder="0" min="0" max="5" id="tentacles" name="tentacles" />  </div>)})}   </div>
       
       </section>
       

@@ -1,4 +1,26 @@
 
+ @media only screen and (max-width: 700px) {
+
+  .parallax-para{
+   width:80%;
+  font-size:14px;
+   
+
+  }
+}
+
+ @media only screen and (min-width: 980px) {
+h3{
+  font-weight: bolder;
+
+}
+  .parallax-para{
+   width:50%;
+  font-size:18px;
+   
+
+  }
+}
 
 .parallax-main1{
 	position:relative;
@@ -44,4 +66,10 @@ background-attachment: fixed; /*for parallax */
 	align-items: center;
   color:white;
   font-size: 40px;
+}
+
+.parall{
+
+color:white ;
+font-size: 30px;
 }
